@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Mega-Sena</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Incluindo a biblioteca PapaParse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Dezenas da Mega-Sena</h1>
+        <form id="consultaForm">
+            <label for="dezena1">Dezena 1:</label>
+            <input type="number" id="dezena1" min="1" max="60" required>
+            
+            <label for="dezena2">Dezena 2:</label>
+            <input type="number" id="dezena2" min="1" max="60" required>
+            
+            <label for="dezena3">Dezena 3:</label>
+            <input type="number" id="dezena3" min="1" max="60" required>
+            
+            <label for="dezena4">Dezena 4:</label>
+            <input type="number" id="dezena4" min="1" max="60" required>
+            
+            <label for="dezena5">Dezena 5:</label>
+            <input type="number" id="dezena5" min="1" max="60" required>
+            
+            <label for="dezena6">Dezena 6:</label>
+            <input type="number" id="dezena6" min="1" max="60" required>
+            
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
